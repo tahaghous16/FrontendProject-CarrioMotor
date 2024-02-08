@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sora:wght@400;700&display=swap');
+
+*{
+
+    font-family: Sora," sans-serif";
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+
+:root{
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow:0 8px 22px rgba(0,0,0,0.1);
+}
+
+
+body{
+    background-color: rgb(35, 33, 33)!important;
+    color: #fff !important;
+  }
+
+
+/* nav link and tabs color */
+
+ .nav-link:hover {
+   
+    background-color: red !important;
+    color: white !important;
+    
+}
+
+ .dropdown-item:hover{
+    background-color:red!important  ;
+    color: white!important;
+    
+} 
+
+.nav-link {
+    font-size: large;
+    font-weight: bold;
+    margin-right: 10px;
+   
+}
+
+ /* HERO SECTION */
+
+.hero{
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* footer */
+
+.footer-top{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--dark);
+    display: flex;
+    align-content: center;
+}
+
+.footer-top p{
+    color: var(--body);
+}
+
+.footer-top p:hover{
+    color: #fff;
+}
+
+.footer-bottom{
+    background-color: #242930;
+    
+}
+
+.footer-bottom a{
+    color: #fff;
+    
+}
+
+
+
+/* bg-maroon */
+.bg-maroon{
+    background-color: maroon;
+}
+
+.card-body{
+    text-align: center;
+}
+
+/* Map */
+#my-map-display img.text-marker {
+    max-width: none !important;
+    background: none !important;
+  }
+img {
+    max-width: none
+  }
+/* index carousel */
+.cw{
+    width: 4%;
+}
+
+.card{
+    background-color: rgb(35, 33, 33)!important;
+    margin: 20px;
+    color: white;
+    padding-top: 50px;
+    
+    
+}
+.card-title{
+    color: white;
+}
+.card .btn{
+    color: white;
+    background-color: rgba(128, 0, 0, 0.897);
+
+    border-color:  rgba(128, 0, 0, 0.897);
+}
+
+/* index modal */
+.modal-header{
+    color: black;
+}
+.modal-body{
+    color: black;
+}
+.text-maroon {
+    color: rgba(128, 0, 0, 0.897);
+}
+
+li a{
+   text-decoration: none;
+   color: white;
+}
+
+li a :hover{
+    text-decoration: none;
+    color: rgba(128, 0, 0, 0.897) !important; 
+ }
+
+ @media screen and (max-width: 720px) {
+    #my-map-display{
+        margin-top: 25px;
+    }
+    .carousel-item img{
+        height: auto;
+    }
+    #carCarousel{
+        display: none;
+    }
+    #hidden{
+        display: none;
+    }
+}
+
+
+

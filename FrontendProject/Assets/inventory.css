@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sora:wght@400;700&display=swap');
+
+*{
+
+    font-family: Sora," sans-serif";
+    /* font-family: 'Poppins', sans-serif; */
+    
+}
+
+body{
+  background-color: rgb(35, 33, 33)!important;
+}
+
+
+:root{
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow:0 8px 22px rgba(0,0,0,0.1);
+}
+
+
+/* nav link and tabs color */
+
+ .nav-link:hover {
+   
+    background-color: red !important;
+    color: white !important;
+   
+}
+
+ .dropdown-item:hover{
+    background-color:red!important  ;
+    color: white!important;
+} 
+
+.nav-link {
+    font-size: large;
+    font-weight: bold;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* footer */
+
+.footer-top{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--dark);
+    display: flex;
+    align-content: center;
+}
+
+.footer-top p{
+    color: var(--body);
+}
+
+
+.footer-top p:hover{
+    color: #fff;
+}
+
+
+.footer-bottom{
+    background-color: #242930;
+    
+}
+
+.footer-bottom a{
+    color: #fff;
+    
+}
+
+
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#buttons{
+  margin-left: 28%;
+  margin-top: 30px;
+  
+}
+#search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border: 3px solid  rgba(128, 0, 0, 0.527);
+  border-radius: 3em;
+  padding: 1em 0.3em;
+  margin-left: 25%;
+  color: white;
+}
+
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: rgba(128, 0, 0, 0.527);
+  color: #ffffff;
+  border-radius: 3em;
+  margin-top: 0.5em;
+}
+.button-value {
+  border: 2px solid rgba(128, 0, 0, 0.527);
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  margin-left: 5px;
+  color: black;
+  cursor: pointer;
+}
+.button2-value {
+  border: 2px solid rgba(128, 0, 0, 0.527);
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  margin-left: 5px;
+  color: black;
+  cursor: pointer;
+}
+.active {
+  background-color: rgba(128, 0, 0, 0.527);
+  color:white;
+}
+#Models {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+
+#carCards {
+  display: grid;
+  grid-template-columns: auto auto  ;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+#warranty {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+
+
+.card {
+  background-color: rgba(128, 0, 0, 0.527);
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+.containerC h5,h6,h1,h3{
+  text-align: center;
+  color: white;
+}
+.containerC p{
+  text-align: justify;
+  color: white;
+}
+.Image-containerC{
+  text-align: center;
+
+
+}
+.Image-containerC img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+ 
+}
+.Image-containerC{
+  text-align: center;
+
+}
+.Image-containerC img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+ 
+}
+.containerC {
+  padding-top: 1em;
+  color: #110f29;
+}
+.containerC h5 {
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+
+/* bg-maroon */
+.bg-maroon{
+  background-color: rgba(128, 0, 0, 0.527);
+}
+
+
+/* finance cards */
+.card-effect{
+  box-shadow: var(--box-shadow);
+  background-color: rgba(128, 0, 0, 0.527);
+ 
+  transition:  all 0.35s ease;
+}
+.card-effect:hover{
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.pricing i{
+  font-size: 20px;
+  /* color: var(--primary); */
+}
+
+.pricing ul li{
+  margin-top: 8px;
+}
+
+     /* MEDIA QUREY */
+
+@media screen and (max-width: 720px) {
+  /* inventory cards */
+  .Image-containerC img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+    text-align: center;
+  }
+  .card {
+    max-width: auto;
+    margin-top: 1em;
+  }
+  
+  #Models {
+    grid-template-columns: auto auto;
+    grid-column-gap:1em;
+    justify-content: center;
+    
+  }
+  #carCards{
+    grid-template-columns: auto;
+    grid-column-gap: 1em;
+    margin-right: 5px;
+    
+    justify-content: center;
+  
+  }
+  #warranty {
+    grid-template-columns: auto;
+    grid-column-gap: 1em;
+    margin-right: 5px;
+    text-align: center;
+    justify-content: center;
+  
+  }
+  .button-value{
+    border: 1px solid rgba(128, 0, 0, 0.527);
+    padding: 1em 2.2em;
+    border-radius: 2em;
+    margin-top: 5px;
+    margin-left: 2px;
+    color: black;
+    cursor: pointer;
+  }
+  .button2-value{
+    border: 1px solid rgba(128, 0, 0, 0.527);
+    padding: 1em 2.2em;
+    border-radius: 2em;
+    margin-top: 5px;
+    margin-left: 2px;
+    color: black;
+    cursor: pointer;
+  } 
+  
+  .active {
+    background-color: rgba(128, 0, 0, 0.527);
+    color:white;
+  }
+  #search-container input {
+    background-color: transparent;
+    width: 60%;
+    border: 3px solid rgba(128, 0, 0, 0.527);
+    border-radius: 25px;
+    padding: 10px;
+    margin-left: 10%;
+    color: white;
+  }
+  #search-container button {
+    padding: 10px;
+    margin-left: 2px;
+    background-color: rgba(128, 0, 0, 0.527);
+    color: #ffffff;
+    border-radius: 25px;
+    margin-top: 0.5em;
+
+  }
+  #buttons{
+    margin-left: 10%;
+    margin-top: 30px;
+  }
+}
+

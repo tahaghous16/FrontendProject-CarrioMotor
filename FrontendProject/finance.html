@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="Assets/inventory.css">
+  <title>Finance</title>
+  <link rel="icon" href="Assets/images/1.png" type="icon">
+</head>
+
+<body>
+  <!-- Header-Start:-->
+  <!-- Display a suitable logo at the top of the page. -->
+
+<!-- NAV-BAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 sticky-top ">
+  <div class="container-fluid d-flex align-items-end">
+    <a class="navbar-brand d-inline-flex flex-column text-center align-items-center" href="#">
+      <img src="Assets/images/1.png" alt="" width="100" height="50">
+      <span>
+        <p class="m-0 fs-6">CARRIO MOTORS</p>
+      </span>
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  me-4 mb-1 " id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link rounded-pill py-0" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-pill py-0" href="inventory.html">INVENTORY</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle rounded-pill py-0" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            FINANCE
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item rounded-pill py-0" href="finance.html">Finance</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item rounded-pill py-0" href="warranty.html">Warranty</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle rounded-pill py-0 " href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            ABOUT US
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item rounded-pill py-0" href="aboutUs.html">About Us</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item rounded-pill py-0" href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NAV-BAR -->
+  <!-- Header-End:-->
+
+     <!-- FINANCE -->
+  <!-- Dropdown -->
+  <div class="container">
+    <h1 class=" display-3 mt-5 my-3">Finance Schemes</h1>
+    <div class="row mt-5">
+      <div class="col-lg-6 col-md-12">
+
+        <div class="form-group">
+          <!-- Brand Dropdown -->
+          <select class="form-select" id="brandSelect" onchange="updateModels()">
+            <option>Select Brand</option>
+            <option value="Audi">Audi</option>
+            <option value="Bmw">Bmw</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Kia">Kia</option>
+            <option value="Suzuki">Suzuki</option>
+            <!-- Add brand options dynamically using JavaScript -->
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <!-- Model Dropdown -->
+        <div class="form-group">
+          <select id="modelSelect" class="form-select" onchange="displayCarCards()">
+            <option selected>Select Model</option>
+            <!-- Add model options dynamically using JavaScript -->
+          </select>
+        </div>
+      </div>
+
+      <div id="carCards">
+        
+        </div> 
+      </div>
+      </div>
+    </div>
+
+  <!-- FOOTER- SECTION -->
+
+  <footer class="text-light">
+
+    <div class="footer-top text-center ">
+      <div class="container-fluid">
+        <div class="row">
+
+
+          <div class="col-lg-12">
+            <a class="text-decoration-none" href="#">
+              <img src="Assets/images/1.png" alt="" width="200" height="100" class=""> <br>
+              <p class="fs-6">CARRIO MOTORS</p>
+            </a>
+            <p>Privacy Policy | Disclaimer
+              <br>
+              © 2023-2024 CARRIO MOTORS - Cars Dealer in Pakistan ,
+            </p>
+
+            <p class="cpryt"><a href="#" style="text-decoration: none; color: white"><i
+                  class="fa-regular fa-copyright"></i>
+                Copyright all right reserved.</a></p>
+
+
+            <a href="sitemap.html" style="text-decoration: none;">
+              SITEMAP
+            </a>
+
+
+          </div>
+
+
+
+          <!-- Footer Section -->
+          
+
+          <!-- Ticker -->
+        
+      <div class="container-fluid  fixed-bottom bg-light text-dark " style="height: 50px;">
+        <div>
+          <div id="ticker-container" class="py-2">
+            <div id="ticker">
+              <span id="location"> <a type="button" class="text-dark" href="index.html#my-map-display"
+                  style="text-decoration: none;"><i class="fa-solid fa-map-location-dot "></i> Aptech Metro Star
+                  Gate, Shah Faisal Colony</a></span>
+              | <span id="date"></span> | <span id="time"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</footer>
+
+<script src="Assets/js/myscript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+    // Your car data
+    const cars = [
+
+
+
+      // AUDI
+
+      {
+        "brandname": "Audi",
+
+        "model": "Audi A4",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 35000,
+            "interestRate": 3.5,
+            "loanTermMonths": 60,
+            "downPayment": 5000,
+            "monthlyInstallment": 600
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 3000,
+            "monthlyLeasePayment": 500,
+            "residualValue": 20000
+          }
+        ]
+      },
+      {
+        "brandname": "Audi",
+
+        "model": "Audi A6",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 38000,
+            "interestRate": 3.8,
+            "loanTermMonths": 72,
+            "downPayment": 6000,
+            "monthlyInstallment": 650
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 48,
+            "mileageLimitPerYear": 15000,
+            "downPayment": 4000,
+            "monthlyLeasePayment": 550,
+            "residualValue": 22000
+          }
+        ]
+      },
+      {
+        "brandname": "Audi",
+
+        "model": "Audi A8",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 45000,
+            "interestRate": 4.2,
+            "loanTermMonths": 84,
+            "downPayment": 7000,
+            "monthlyInstallment": 750
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 60,
+            "mileageLimitPerYear": 18000,
+            "downPayment": 5000,
+            "monthlyLeasePayment": 700,
+            "residualValue": 25000
+          }
+        ]
+      },
+      {
+        "brandname": "Audi",
+
+        "model": "Audi Q3",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 30000,
+            "interestRate": 3.2,
+            "loanTermMonths": 48,
+            "downPayment": 4000,
+            "monthlyInstallment": 550
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 24,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 2500,
+            "monthlyLeasePayment": 450,
+            "residualValue": 18000
+          }
+        ]
+      },
+      {
+        "brandname": "Audi",
+
+        "model": "Audi Q5",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 40000,
+            "interestRate": 3.7,
+            "loanTermMonths": 60,
+            "downPayment": 6000,
+            "monthlyInstallment": 700
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 4000,
+            "monthlyLeasePayment": 600,
+            "residualValue": 22000
+          }
+        ]
+      },
+      {
+        "brandname": "Audi",
+
+        "model": "Audi Q7",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 50000,
+            "interestRate": 4.0,
+            "loanTermMonths": 72,
+            "downPayment": 8000,
+            "monthlyInstallment": 800
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 48,
+            "mileageLimitPerYear": 15000,
+            "downPayment": 6000,
+            "monthlyLeasePayment": 700,
+            "residualValue": 28000
+          }
+        ]
+      },
+      {
+        "brandname": "Audi",
+
+        "model": "Audi S4",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 42000,
+            "interestRate": 3.9,
+            "loanTermMonths": 60,
+            "downPayment": 7000,
+            "monthlyInstallment": 750
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 5000,
+            "monthlyLeasePayment": 650,
+            "residualValue": 25000
+          }
+        ]
+      },
+      {
+        "brandname": "Audi",
+        "model": "Audi RS5",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 60000,
+            "interestRate": 4.5,
+            "loanTermMonths": 84,
+            "downPayment": 10000,
+            "monthlyInstallment": 950
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 60,
+            "mileageLimitPerYear": 18000,
+            "downPayment": 8000,
+            "monthlyLeasePayment": 900,
+            "residualValue": 35000
+          }
+        ]
+      },
+
+      //   BMW
+
+      {
+
+        "brandname": "Bmw",
+        "model": "BMW 3 Series",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 35000,
+            "interestRate": 3.5,
+            "loanTermMonths": 60,
+            "downPayment": 5000,
+            "monthlyInstallment": 600
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 3000,
+            "monthlyLeasePayment": 500,
+            "residualValue": 20000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Bmw",
+        "model": "BMW 5 Series",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 45000,
+            "interestRate": 4.0,
+            "loanTermMonths": 72,
+            "downPayment": 7000,
+            "monthlyInstallment": 750
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 48,
+            "mileageLimitPerYear": 15000,
+            "downPayment": 5000,
+            "monthlyLeasePayment": 700,
+            "residualValue": 25000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Bmw",
+        "model": "BMW 7 Series",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 55000,
+            "interestRate": 4.2,
+            "loanTermMonths": 84,
+            "downPayment": 9000,
+            "monthlyInstallment": 800
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 60,
+            "mileageLimitPerYear": 18000,
+            "downPayment": 7000,
+            "monthlyLeasePayment": 750,
+            "residualValue": 30000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Bmw",
+        "model": "BMW X3",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 40000,
+            "interestRate": 3.7,
+            "loanTermMonths": 60,
+            "downPayment": 6000,
+            "monthlyInstallment": 700
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 4000,
+            "monthlyLeasePayment": 600,
+            "residualValue": 22000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Bmw",
+        "model": "BMW X5",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 50000,
+            "interestRate": 4.0,
+            "loanTermMonths": 72,
+            "downPayment": 8000,
+            "monthlyInstallment": 800
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 48,
+            "mileageLimitPerYear": 15000,
+            "downPayment": 6000,
+            "monthlyLeasePayment": 700,
+            "residualValue": 28000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Bmw",
+        "model": "BMW X7",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 60000,
+            "interestRate": 4.5,
+            "loanTermMonths": 84,
+            "downPayment": 10000,
+            "monthlyInstallment": 950
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 60,
+            "mileageLimitPerYear": 18000,
+            "downPayment": 8000,
+            "monthlyLeasePayment": 900,
+            "residualValue": 35000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Bmw",
+        "model": "BMW M3",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 55000,
+            "interestRate": 4.2,
+            "loanTermMonths": 72,
+            "downPayment": 9000,
+            "monthlyInstallment": 800
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 48,
+            "mileageLimitPerYear": 15000,
+            "downPayment": 7000,
+            "monthlyLeasePayment": 750,
+            "residualValue": 30000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Bmw",
+        "model": "BMW iX3",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 45000,
+            "interestRate": 4.0,
+            "loanTermMonths": 60,
+            "downPayment": 7000,
+            "monthlyInstallment": 750
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 5000,
+            "monthlyLeasePayment": 650,
+            "residualValue": 25000
+          }
+        ]
+      },
+
+      //  HYUNDAI
+
+      {
+
+        "brandname": "Hyundai",
+        "model": "Hyundai Elantra",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 20000,
+            "interestRate": 2.5,
+            "loanTermMonths": 36,
+            "downPayment": 3000,
+            "monthlyInstallment": 450
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 24,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 2000,
+            "monthlyLeasePayment": 350,
+            "residualValue": 12000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Hyundai",
+        "model": "Hyundai Sonata",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 25000,
+            "interestRate": 3.0,
+            "loanTermMonths": 48,
+            "downPayment": 4000,
+            "monthlyInstallment": 500
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 2500,
+            "monthlyLeasePayment": 400,
+            "residualValue": 15000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Hyundai",
+        "model": "Hyundai Santa Fe",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 30000,
+            "interestRate": 3.5,
+            "loanTermMonths": 60,
+            "downPayment": 5000,
+            "monthlyInstallment": 600
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 48,
+            "mileageLimitPerYear": 15000,
+            "downPayment": 3000,
+            "monthlyLeasePayment": 500,
+            "residualValue": 18000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Hyundai",
+        "model": "Hyundai Tucson",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 25000,
+            "interestRate": 3.0,
+            "loanTermMonths": 48,
+            "downPayment": 4000,
+            "monthlyInstallment": 500
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 2500,
+            "monthlyLeasePayment": 400,
+            "residualValue": 15000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Hyundai",
+        "model": "Hyundai Kona",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 22000,
+            "interestRate": 2.7,
+            "loanTermMonths": 48,
+            "downPayment": 3500,
+            "monthlyInstallment": 480
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 2000,
+            "monthlyLeasePayment": 380,
+            "residualValue": 14000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Hyundai",
+        "model": "Hyundai Palisade",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 40000,
+            "interestRate": 4.0,
+            "loanTermMonths": 72,
+            "downPayment": 6000,
+            "monthlyInstallment": 700
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 60,
+            "mileageLimitPerYear": 18000,
+            "downPayment": 4000,
+            "monthlyLeasePayment": 650,
+            "residualValue": 28000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Hyundai",
+        "model": "Hyundai Veloster",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 18000,
+            "interestRate": 2.3,
+            "loanTermMonths": 36,
+            "downPayment": 2500,
+            "monthlyInstallment": 420
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 24,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 1500,
+            "monthlyLeasePayment": 350,
+            "residualValue": 10000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Hyundai",
+        "model": "Hyundai Genesis",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 50000,
+            "interestRate": 4.5,
+            "loanTermMonths": 84,
+            "downPayment": 2000,
+            "monthlyInstallment": 380
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 60,
+            "mileageLimitPerYear": 18000,
+            "downPayment": 4000,
+            "monthlyLeasePayment": 650,
+            "residualValue": 25000
+          }
+        ]
+      },
+
+      //   KIA
+
+      {
+
+        "brandname": "Kia",
+        "model": "Kia Optima",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 28000,
+            "interestRate": 3.2,
+            "loanTermMonths": 48,
+            "downPayment": 4500,
+            "monthlyInstallment": 550
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 3000,
+            "monthlyLeasePayment": 450,
+            "residualValue": 18000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Kia",
+        "model": "Kia Sorento",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 35000,
+            "interestRate": 3.5,
+            "loanTermMonths": 60,
+            "downPayment": 5000,
+            "monthlyInstallment": 600
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 48,
+            "mileageLimitPerYear": 15000,
+            "downPayment": 3500,
+            "monthlyLeasePayment": 500,
+            "residualValue": 22000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Kia",
+        "model": "Kia Telluride",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 42000,
+            "interestRate": 3.8,
+            "loanTermMonths": 72,
+            "downPayment": 6000,
+            "monthlyInstallment": 650
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 60,
+            "mileageLimitPerYear": 18000,
+            "downPayment": 4500,
+            "monthlyLeasePayment": 600,
+            "residualValue": 28000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Kia",
+        "model": "Kia Sportage",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 30000,
+            "interestRate": 3.2,
+            "loanTermMonths": 48,
+            "downPayment": 4000,
+            "monthlyInstallment": 550
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 2500,
+            "monthlyLeasePayment": 450,
+            "residualValue": 20000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Kia",
+        "model": "Kia Forte",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 22000,
+            "interestRate": 2.7,
+            "loanTermMonths": 48,
+            "downPayment": 3500,
+            "monthlyInstallment": 480
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 2000,
+            "monthlyLeasePayment": 380,
+            "residualValue": 14000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Kia",
+        "model": "Kia Soul",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 20000,
+            "interestRate": 2.5,
+            "loanTermMonths": 36,
+            "downPayment": 3000,
+            "monthlyInstallment": 450
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 24,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 1500,
+            "monthlyLeasePayment": 350,
+            "residualValue": 12000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Kia",
+        "model": "Kia Stinger",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 40000,
+            "interestRate": 4.0,
+            "loanTermMonths": 72,
+            "downPayment": 6000,
+            "monthlyInstallment": 700
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 60,
+            "mileageLimitPerYear": 18000,
+            "downPayment": 4000,
+            "monthlyLeasePayment": 650,
+            "residualValue": 28000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Kia",
+        "model": "Kia Carnival",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 45000,
+            "interestRate": 4.2,
+            "loanTermMonths": 84,
+            "downPayment": 7000,
+            "monthlyInstallment": 750
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 60,
+            "mileageLimitPerYear": 18000,
+            "downPayment": 5000,
+            "monthlyLeasePayment": 700,
+            "residualValue": 30000
+          }
+        ]
+      },
+
+      //   SUZUKI
+
+      {
+
+        "brandname": "Suzuki",
+        "model": "Suzuki Swift",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 18000,
+            "interestRate": 2.3,
+            "loanTermMonths": 36,
+            "downPayment": 2500,
+            "monthlyInstallment": 420
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 24,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 1500,
+            "monthlyLeasePayment": 350,
+            "residualValue": 10000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Suzuki",
+        "model": "Suzuki Vitara",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 25000,
+            "interestRate": 3.0,
+            "loanTermMonths": 48,
+            "downPayment": 4000,
+            "monthlyInstallment": 500
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 2500,
+            "monthlyLeasePayment": 400,
+            "residualValue": 15000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Suzuki",
+        "model": "Suzuki Jimny",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 20000,
+            "interestRate": 2.5,
+            "loanTermMonths": 36,
+            "downPayment": 3000,
+            "monthlyInstallment": 450
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 24,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 1500,
+            "monthlyLeasePayment": 350,
+            "residualValue": 12000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Suzuki",
+        "model": "Suzuki Baleno",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 22000,
+            "interestRate": 2.7,
+            "loanTermMonths": 48,
+            "downPayment": 3500,
+            "monthlyInstallment": 480
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 2000,
+            "monthlyLeasePayment": 380,
+            "residualValue": 14000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Suzuki",
+        "model": "Suzuki Ciaz",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 28000,
+            "interestRate": 3.2,
+            "loanTermMonths": 48,
+            "downPayment": 4500,
+            "monthlyInstallment": 550
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 3000,
+            "monthlyLeasePayment": 450,
+            "residualValue": 18000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Suzuki",
+        "model": "Suzuki SX4 S-Cross",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 30000,
+            "interestRate": 3.2,
+            "loanTermMonths": 48,
+            "downPayment": 4000,
+            "monthlyInstallment": 550
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 24,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 2500,
+            "monthlyLeasePayment": 450,
+            "residualValue": 20000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Suzuki",
+        "model": "Suzuki Ignis",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 18000,
+            "interestRate": 2.3,
+            "loanTermMonths": 36,
+            "downPayment": 2500,
+            "monthlyInstallment": 420
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 24,
+            "mileageLimitPerYear": 10000,
+            "downPayment": 1500,
+            "monthlyLeasePayment": 350,
+            "residualValue": 12000
+          }
+        ]
+      },
+      {
+
+        "brandname": "Suzuki",
+        "model": "Suzuki Grand Vitara",
+        "financingOptions": [
+          {
+            "type": "Loan Financing",
+            "loanAmount": 35000,
+            "interestRate": 3.5,
+            "loanTermMonths": 60,
+            "downPayment": 5000,
+            "monthlyInstallment": 600
+          },
+          {
+            "type": "Lease Financing",
+            "leaseTermMonths": 36,
+            "mileageLimitPerYear": 12000,
+            "downPayment": 3000,
+            "monthlyLeasePayment": 500,
+            "residualValue": 22000
+          }
+        ]
+      }
+
+    ]
+
+    // Get unique brands and models from the car data
+    // Get unique brands and models from the car data
+const brands = [...new Set(cars.map(car => car.brandname))];
+const models = [...new Set(cars.map(car => car.model))];
+
+    // Function to create a card for financing option
+    function createCard(model, financingOption) {
+      const card = document.createElement('div');
+      card.className = 'card text-light pricing card-effect';
+      card.innerHTML = `
+                
+
+
+      <h6>${model}</h6>
+                    <h1><strong>Financing Option:</strong> ${financingOption.type}</h1>
+                    <hr>
+                    <ul class="list-unstyled mb-4">
+                      <li><i class="fa-solid fa-circle-check"></i> <strong>Loan Amount:</strong> ${financingOption.loanAmount} 
+                        </li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Lease Months:</strong> ${financingOption.leaseTermMonths} months
+                        </li>
+                      <li><i class="fa-solid fa-circle-check"></i> <strong>Interest Rate:</strong> ${financingOption.interestRate}%
+                         </li>
+                      <li><i class="fa-solid fa-circle-check"></i> <strong>Mileage Per Year:</strong> ${financingOption.mileageLimitPerYear}
+                         </li>
+                      <li><i class="fa-solid fa-circle-check"></i> <strong>Loan Term:</strong> ${financingOption.loanTermMonths} months
+                        </li>
+                      <li><i class="fa-solid fa-circle-check"></i> <strong>Down Payment:</strong> ${financingOption.downPayment}
+                        </li>
+                      <li><i class="fa-solid fa-circle-check"></i> <strong>Monthly Lease Payment:</strong> ${financingOption.monthlyLeasePayment} 
+                        </li>
+                      <li><i class="fa-solid fa-circle-check"></i> <strong>Monthly Payment:</strong> ${financingOption.monthlyInstallment} 
+                        </li>
+                      <li><i class="fa-solid fa-circle-check"></i> <strong>Residual Value:</strong> ${financingOption.residualValue} </li>
+                    </ul>         
+                     
+            `;
+           
+      return card;
+    }
+
+    // Function to display car financing cards based on selected brand and model
+    function displayCarCards() {
+      const brandSelect = document.getElementById('brandSelect');
+      const modelSelect = document.getElementById('modelSelect');
+      const carCardsContainer = document.getElementById('carCards');
+
+      // Clear existing cards
+      carCardsContainer.innerHTML = '';
+
+      // Get the selected brand and model
+      const selectedBrand = brandSelect.value;
+      const selectedModel = modelSelect.value;
+
+      // Filter cars based on selected brand and model
+      const filteredCars = cars.filter(car => {
+        return (selectedBrand === 'all' || car.brandname === selectedBrand) &&
+          (selectedModel === 'all' || car.model === selectedModel);
+      });
+
+      // Display cards for the filtered cars
+      filteredCars.forEach(car => {
+        car.financingOptions.forEach(financingOption => {
+          const card = createCard(car.model, financingOption);
+          carCardsContainer.appendChild(card);
+        });
+      });
+    }
+
+    // Function to update model options based on the selected brand
+    function updateModels() {
+      const brandSelect = document.getElementById('brandSelect');
+      const modelSelect = document.getElementById('modelSelect');
+
+      // Get the selected brand
+      const selectedBrand = brandSelect.value;
+
+      // Filter models based on the selected brand
+      const filteredModels = models.filter(model => {
+        return selectedBrand === 'all' || cars.some(car => car.brandname === selectedBrand && car.model === model);
+      });
+
+      // Update model dropdown options
+      modelSelect.innerHTML = ''; // Clear existing options
+
+      // Add the default option
+      const defaultOption = document.createElement('option');
+      defaultOption.value = 'all';
+      defaultOption.textContent = 'All Models';
+      modelSelect.appendChild(defaultOption);
+
+      // Add the filtered models
+      filteredModels.forEach(model => {
+        const option = document.createElement('option');
+        option.value = model;
+        option.textContent = model;
+        modelSelect.appendChild(option);
+      });
+
+      // Trigger displayCarCards to update the cards based on the selected brand
+      displayCarCards();
+    }
+
+    // Populate brand dropdown options
+    const brandSelect = document.getElementById('brandSelect');
+    brands.forEach(brand => {
+      const option = document.createElement('option');
+      option.value = brand;
+      option.textContent = brand;
+      brandSelect.appendChild(option);
+    });
+
+    // Trigger the initial display of cards
+    displayCarCards();
+  </script>
+  

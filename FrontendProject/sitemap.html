@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Assets/mystyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Sitemap</title>
+  <link rel="icon" href="Assets/images/1.png" type="icon">
+  <style>
+    #sitemap > a{
+      text-decoration: none;
+      color: white;
+    }
+    #ticker > span{
+      text-decoration: none!important;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+<!-- NAV-BAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 sticky-top ">
+  <div class="container-fluid d-flex align-items-end">
+    <a class="navbar-brand d-inline-flex flex-column text-center align-items-center" href="#">
+      <img src="Assets/images/1.png" alt="" width="100" height="50">
+      <span>
+        <p class="m-0 fs-6">CARRIO MOTORS</p>
+      </span>
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  me-4 mb-1 " id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link rounded-pill py-0" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-pill py-0" href="inventory.html">INVENTORY</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle rounded-pill py-0" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            FINANCE
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item rounded-pill py-0" href="finance.html">Finance</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item rounded-pill py-0" href="warranty.html">Warranty</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle rounded-pill py-0 " href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            ABOUT US
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item rounded-pill py-0" href="aboutUs.html">About Us</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item rounded-pill py-0" href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NAV-BAR -->
+  
+ <div id="sitemap">
+  <a href="index.html"><h1>HOME</h1></a>
+    <hr>
+    <a href="inventory.html"><h1>INVENTORY</h1></a>
+    <hr>
+    <h1>FINANCE</h1>
+    <a href="finance.html"><h2>Finance</h2></a>
+    <a href="warranty.html"><h2>Warrenty</h2></a>
+    <hr>
+    <h1>ABOUT US</h1>
+      <a href="aboutUs.html"><h2>About us</h2></a>
+      <a href="contactUs.html"><h2>Contact us</h2></a>
+    </a>
+  
+ </div>
+
+
+
+  
+  <!-- FOOTER- SECTION -->
+
+  <footer class="text-light ">
+
+    <div class="footer-top text-center ">
+      <div class="container-fluid">
+        <div class="row">
+
+
+          <div class="col-lg-12">
+            <a class="text-decoration-none" href="#">
+              <img src="Assets/images/1.png" alt="" width="200" height="100" class=""> <br>
+              <p class="fs-6">CARRIO MOTORS</p>
+            </a>
+            <p>Privacy Policy | Disclaimer
+              <br>
+              © 2023-2024 CARRIO MOTORS - Cars Dealer in Pakistan ,
+            </p>
+
+            <p class="cpryt"><a href="#" style="text-decoration: none; color: white"><i
+                  class="fa-regular fa-copyright"></i>
+                Copyright all right reserved.</a></p>
+
+
+            <a href="sitemap.html" style="text-decoration: none;">
+              SITEMAP
+            </a>
+
+
+          </div>
+
+
+
+              <!-- Ticker -->
+            <!-- Display a continuous scrolling ticker at the bottom of the page.
+      Include the current date, time, and location using the geolocation features of HTML5. -->
+      <div class="container-fluid  fixed-bottom bg-light text-dark  text-center" style="height: 50px;">
+        <div>
+          <!-- <i class="fa-solid fa-location-dot"> </i>
+    <span>Aptech Metro star Gate</span> -->
+          <div id="ticker-container" class="py-2">
+            <div id="ticker">
+            <span id="location"> <a type="button" class="text-dark" href="index.html#my-map-display" style="text-decoration: none;"><i class="fa-solid fa-map-location-dot "></i> Aptech Metro Star Gate, Shah Faisal Colony</a></span>
+             | <span id="date" ></span> | <span id="time"></span> 
+            </div>
+          </div>
+        </div>
+
+      </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+  <script>
+   
+//    Ticker 
+
+function updateTicker() {
+    const dateElement = document.getElementById('date');
+    const timeElement = document.getElementById('time');
+
+    const currentDate = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = currentDate.toLocaleDateString('en-US', options);
+    const formattedTime = currentDate.toLocaleTimeString();
+
+    dateElement.textContent = formattedDate;
+    timeElement.textContent = formattedTime;
+}
+
+updateTicker(); // Initial update
+setInterval(updateTicker, 1000); // Update every second 
+
+  </script>
+</body>
+
+</html>
